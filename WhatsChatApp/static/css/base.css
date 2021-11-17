@@ -1,3 +1,16 @@
 header{
 	color: red;
 }
+
+header h1 a {
+	text-align: right;
+	color: blue;
+}
+
+p{
+	test-align: right;
+}
+
+title {
+	color: red;
+}
