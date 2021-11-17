@@ -1,16 +1,16 @@
-header{
+body{
+	font-family: fantasy;
 	color: red;
+	background-color: darkgray;
 }
 
-header h1 a {
-	text-align: right;
-	color: blue;
+a{
+	color: black;
 }
 
-p{
-	test-align: right;
-}
 
-title {
-	color: red;
+
+h1 {
+	font-size: 40px;
+	text-align: center;
 }
