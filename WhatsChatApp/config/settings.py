@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pages',
+    'homepage',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -136,3 +138,9 @@ CHANNEL_LAYERS = {
             },
         },
     }
+
+STATIC_URL = 'WhatsChatApp/static/'
+STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
+
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home' 
