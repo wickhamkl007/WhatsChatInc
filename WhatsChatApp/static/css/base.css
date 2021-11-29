@@ -2,16 +2,16 @@ body{
 	font-family: fantasy;
 	color: red;
 	background-color: darkgray;
+	margin-right: 200px;
+	margin-left: 200px;
 }
 
 a{
 	color: black;
 }
 
-
-
 h1 {
-	font-size: 40px;
+	font-size: 100px;
 	text-align: center;
 }
 

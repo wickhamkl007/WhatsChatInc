@@ -1,8 +1,8 @@
-
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 <h1>WhatsChat</h1>
-<img src="../pictures/Logo.png" alt="Logo">
+<img style="height: 300px; display: block; margin: auto;" src="{% static 'pictures/logo.jpeg' %}" alt="Logo">
 {% endblock content %}
 
