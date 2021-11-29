@@ -85,7 +85,10 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'TEST': {
+            'NAME': os.path.join(BASE_DIR, 'db_test.sqlite3')
+            }
     }
 }
 
@@ -132,10 +135,11 @@ STATIC_URL = '/static/'
 ASGI_APPLICATION = 'config.asgi.application'
 CHANNEL_LAYERS = {
     'default':{
-        'BACKEND': "channels.layers.InMemoryChannelLayer",
-        'CONFIG': {
-            "hosts": [('127.0.0.1', 6379)],
-            },
+        'BACKEND': "channels.layers.InMemoryChannelLayer"
+        #"channels_redis.core.RedisChannelLayer",
+        #'CONFIG': {
+            #"hosts": [('127.0.0.1', 6379)],
+            #},
         },
     }
 
