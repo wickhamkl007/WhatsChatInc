@@ -1,0 +1,13 @@
+django
+gunicorn
+django-heroku
+requests
+channels
+channels_redis
+asgi_redis
+asgiref
+daphne
+redis
+gevent
+gevent-websocket
+greenlet
