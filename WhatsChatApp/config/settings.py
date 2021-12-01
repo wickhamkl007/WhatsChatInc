@@ -132,13 +132,16 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Channels
-ASGI_APPLICATION = 'WhatsChatApp.asgi.application'
+ASGI_APPLICATION = 'config.asgi.application'
 CHANNEL_LAYERS = {
-    "default": {
-        "BACKEND": "channels_redis.core.RedisChannelLayer",
-        "CONFIG": {"hosts": [os.environ.get("REDIS_URL", "redis://localhost:6379")]},
-    },
-}
+    'default':{
+        'BACKEND': "channels.layers.InMemoryChannelLayer"
+        #"channels_redis.core.RedisChannelLayer",
+        #'CONFIG': {
+            #"hosts": [('127.0.0.1', 6379)],
+            #},
+        },
+    }
 
 STATIC_URL = 'WhatsChatApp/static/'
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
