@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ['.herokuapp.com', 'localhost', '127.0.0.1']
 
 INSTALLED_APPS = [
     'chat',
-    'channels'
+    'channels',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
