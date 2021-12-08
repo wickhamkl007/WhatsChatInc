@@ -133,6 +133,7 @@ STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
+
 # Channels
 ASGI_APPLICATION = 'config.asgi.application'
 CHANNEL_LAYERS = {
@@ -144,3 +145,4 @@ CHANNEL_LAYERS = {
             #},
         },
     }
+
