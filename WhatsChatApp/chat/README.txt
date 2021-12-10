@@ -1,0 +1,1 @@
+Chat app hosts asynchronous conversation between users who type in a name for a chat room as the topic of the room.

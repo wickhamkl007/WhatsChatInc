@@ -142,10 +142,10 @@ LOGOUT_REDIRECT_URL = 'home'
 ASGI_APPLICATION = 'config.asgi.application'
 CHANNEL_LAYERS = {
     'default':{
-        'BACKEND': "channels.layers.InMemoryChannelLayer"
-        #"channels_redis.core.RedisChannelLayer",
+        'BACKEND': "channels.layers.InMemoryChannelLayer",
+        #"BACKEND":"channels_redis.core.RedisChannelLayer",
         #'CONFIG': {
-            #"hosts": [('127.0.0.1', 6379)],
+           # "hosts": [os.environ.get('REDIS_URL')],
             #},
         },
     }

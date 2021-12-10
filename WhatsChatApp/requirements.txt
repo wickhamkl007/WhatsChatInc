@@ -1,0 +1,9 @@
+manage.py
+db.sqlite3
+WhatsChatApp
+Chat
+homepage
+accounts
+python-3.9.7
+channels
+django
