@@ -2,7 +2,22 @@
 {% load static %}
 
 {% block content %}
+<style>
+	a { text-decoration: none !important; 
+		}
+
+</style>
+
 <h1>WhatsChat</h1>
 <img style="height: 300px; display: block; margin: auto;" src="{% static 'pictures/logo.jpeg' %}" alt="Logo">
+
+{% if user.is_authenticated %}
+<br>
+<a class="btn btn-primary" href="/chat" style="margin-left: 500px;">Lets Chat!</a>
+
+{% else %}
+<h2 style="text-align: center;">Log in to chat!</h2>
+{% endif %}
+
 {% endblock content %}
 
