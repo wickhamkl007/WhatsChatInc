@@ -15,6 +15,13 @@ Including another URLconf
 """
 from django.urls import path, include
 from django.contrib import admin
+<<<<<<< HEAD
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('pages.urls')),
+=======
 from django.views.generic.base import TemplateView
 
 
@@ -27,4 +34,5 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='home.html'),
         name='home'),
     path('chat/', include('chat.urls')),
+>>>>>>> main
 ]
